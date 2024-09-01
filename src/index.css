@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+}
+@media only screen and (max-width: 600px) and (min-width: 400px) {
+  :root {
+    font-size: 16px;
+  }
+  #root{
+    font-size: 16px;
+  }
+
+}
+@media only screen and (max-width: 400px) and (min-width: 200px) {
+  :root {
+    font-size: 10px;
+  }
+
+  #root {
+    font-size: 10px;
+  }
+
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  display: flex;
+  place-items: center;
+  width: 100%;
+  min-height: 100%;
+}
+
+.icon::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}

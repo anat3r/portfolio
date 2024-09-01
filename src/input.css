@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+[class^="icon-"],
+[class*=" icon-"] {
+  display: inline-block;
+  width: 100%;
+}
+td i {
+  text-align: center;
+}
