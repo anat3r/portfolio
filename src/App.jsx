@@ -81,7 +81,7 @@ function App() {
     <div className='w-screen h-screen bg-neutral-200/5 flex-col justify-start items-center inline-flex'>
       <Header>
         <div className="flex-1 w-96 h-16 justify-start items-center inline-flex">
-          <a href="/" className="w-36 text-indigo-700 hover:text-indigo-500 text-2xl font-bold">Ruslan Bedychev</a>
+          <a href="" className="w-36 text-indigo-700 hover:text-indigo-500 text-2xl font-bold">Ruslan Bedychev</a>
         </div>
         <ButtonList btns={buttonsHead} />
       </Header>
