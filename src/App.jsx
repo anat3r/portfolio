@@ -98,8 +98,8 @@ function App() {
       <SectionList sections={sections}>
 
       </SectionList>
-      <div className='flex bg-inherit py-2 w-full h-fit flex-col justify-center items-center gap-8'> {/* Other projects section */}
-        <h2 className='w-fit text-3xl font-semibold'>OtherProjects</h2>
+      <div className='flex bg-inherit py-12 w-full h-fit flex-col justify-center items-center gap-12'> {/* Other projects section */}
+        <h2 className='w-fit text-3xl font-semibold'>Other projects</h2>
         <ProjectTable projects={otherProj} />
       </div>
       <Footer />

@@ -11,7 +11,7 @@ export function Button({ gray=false, roundf=false, ext, href, label }) {
 }
 export function Section({ children, color }){
   return (
-    <div className={color + " max-w-[1400px] p-4 flex-wrap rounded-3xl justify-start items-start gap-8 inline-flex"}>
+    <div className={color + " max-w-[1400px] p-4 flex-wrap rounded-3xl justify-start items-start gap-8 flex"}>
       {children}  
     </div>
   )
@@ -25,12 +25,12 @@ export function SectionList({sections}){
             {
               section.type == "skill" ? <>
               <Section color={section.color}>
-                  <div className="w-64 h-auto bg-gray-200/50 rounded-3xl"><img className=" max-w-full h-auto rounded-3xl" src={section.image} /></div>
-                <div className="flexflex-wrap grow shrink basis-0 h-fit p-2.5 flex-col justify-center items-center gap-8 flex">
-                  <div className="grow flex-wrap shrink self-stretch h-fitflex-col justify-start items-start gap-2 flex">
-                    {section.inner}
-                  </div>
-                  <ul className="list-none flex-wrap flex items-center justify-end gap-4 py-1">
+                  <img className="max-w-[30%] h-auto rounded-3xl" src={section.image} />
+                  <div className="flex-[1_0_80%] flex-wrap grow shrink basis-0 h-fit p-2.5 flex-col justify-center items-center gap-8 flex">
+                    <div className="grow flex-wrap shrink self-stretch h-fitflex-col justify-start items-start gap-2 flex">
+                      {section.inner}
+                    </div>
+                    <ul className="list-none flex-wrap flex items-center justify-end gap-4 py-1">
                     {section.skills.length &&
                       section.skills.map((skill, id) => (
                         <li key={id} className="Skills self-stretch p-4 justify-start items-center gap-4 inline-flex">
@@ -41,10 +41,10 @@ export function SectionList({sections}){
                             <div className="React text-neutral-100 text-3xl font-medium font-['Raleway']">{skill.label}</div>
                           </div>
                         </li>
-                      ))
-                    }
-                  </ul>
-                </div>
+                       ))
+                      }
+                    </ul>
+                  </div>
               </Section>
               </> : 
               <>
