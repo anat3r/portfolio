@@ -1,9 +1,9 @@
 import { Button } from "../elements/elems"
 export function Header({children}) {
   return (
-    <div className="flex flex-1 justify-between items-center px-8 py-2 w-full">
+    <header className=" bg-white flex flex-1 justify-between items-center px-8 py-2 w-full">
       {children}
-    </div>
+    </header>
   )
 }
 export function ButtonList({ btns }) {

@@ -11,22 +11,22 @@ export function Button({ gray=false, roundf=false, ext, href, label }) {
 }
 export function Section({ children, color }){
   return (
-    <div className={color + " p-6 flex-wrap max-w-full rounded-3xl justify-start items-start gap-8 inline-flex"}>
+    <div className={color + " max-w-[1400px] p-4 flex-wrap rounded-3xl justify-start items-start gap-8 inline-flex"}>
       {children}  
     </div>
   )
 }
 export function SectionList({sections}){
   return(
-    <ul className="list-none flex-col bg-neutral-200/5 items-center justify-center gap-8 py-1 w-full">
+    <ul className="flex list-none flex-col bg-inherit items-center justify-center gap-4 py-1 w-full">
       {sections.length &&
         sections.map((section, id) => (
-          <li key={id} className=" h-fit w-full max-w-full   px-12 py-16 flex-col justify-center items-center gap-2.5 inline-flex">
+          <li key={id} className="h-fit w-full px-24 py-16 flex-col justify-center items-center inline-flex">
             {
               section.type == "skill" ? <>
               <Section color={section.color}>
-                  <div className="w-96 h-auto bg-gray-200/50 rounded-3xl"><img className=" max-w-full h-auto rounded-3xl" src={section.image} /></div>
-                <div className="flex-wrap grow shrink basis-0 h-fit p-2.5 flex-col justify-center items-center gap-8 flex">
+                  <div className="w-64 h-auto bg-gray-200/50 rounded-3xl"><img className=" max-w-full h-auto rounded-3xl" src={section.image} /></div>
+                <div className="flexflex-wrap grow shrink basis-0 h-fit p-2.5 flex-col justify-center items-center gap-8 flex">
                   <div className="grow flex-wrap shrink self-stretch h-fitflex-col justify-start items-start gap-2 flex">
                     {section.inner}
                   </div>
@@ -49,12 +49,10 @@ export function SectionList({sections}){
               </> : 
               <>
                     <Section color={section.color}>
-                    <a href={section.href}><img className=" w-96 h-96 bg-gray-200/50 rounded-3xl" src={section.image} /></a>    
-                      <div className="grow shrink basis-0 h-96 p-2.5 flex-col justify-center items-center gap-8 inline-flex">
-                      <div className="grow flex-wrap shrink self-stretch h-fitflex-col justify-start items-start gap-4 flex">
+                    <a href={section.href}><img className=" w-64 h-64 bg-gray-200/50 rounded-3xl" src={section.image} /></a>    
+                    <div className="grow flex-wrap  basis-0 h-fit p-2.5 flex-col justify-center items-start gap-4 inline-flex">
                           {section.inner}
-                        </div>
-                      </div>
+                    </div>
                     </Section>  
               </>
             }
