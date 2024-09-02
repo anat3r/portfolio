@@ -5,7 +5,7 @@ export function ProjectTable({projects}){
     <ul className="w-full h-auto px-4 py-8  gap-8 flex flex-row flex-wrap justify-around max-w-[1400px]">
       {
         projects.map((project, id) => (
-          <li key={id} className="flex bg-white p-8 gap-4 flex-col flex-[1_0_30%] rounded-2xl justify-center items-center"> {/* Project */}
+          <li key={id} className="flex bg-white p-8 gap-4 flex-col flex-[1_0_30%] rounded-2xl justify-start items-center"> {/* Project */}
             <div className="w-full px-2 flex flex-row justify-between">
             {
                 (project.links?.github.length > 4) ? <a href={project.links.github}><span className='text-indigo-800 hover:text-indigo-600 inline-block text-3xl'><i className={"icon fa-brands fa-github fa-circle"}></i></span></a> : <div></div>

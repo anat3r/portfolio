@@ -5,13 +5,13 @@ import { AboutSec } from './sections/about'
 import {Button, Section, SectionList} from './elements/elems'
 import ReactDOM from 'react-dom'
 import photoshop from './assets/photoshop.png'
-import proj1 from './assets/image.png'
+import proj1 from './assets/proj1.png'
+import proj2 from './assets/proj2.png'
+import proj3 from './assets/proj3.png'
 import tailwind from './assets/tailwind.svg'
 import me from './assets/me.jpeg'
 import project from './assets/project.png'
 import { ProjectTable } from './sections/projects'
-/* import ProjectSec from './sections/projects'
-import Footer from './sections/footer' */
 
 
 const buttonsHead = [
@@ -75,9 +75,9 @@ const sections = [
   }
 ]
 const otherProj = [
-  { image: proj1, title: "Contact Book", about: "This is a simple yet functional contact book application built with React and Vite. The app allows users to add, view, edit, and delete contacts, making it a practical tool for managing personal or professional contacts.", links: { github: "https://github.com/anat3r/small-contact-list", site: "https://anat3r.github.io/small-contact-list/"}},
-  { image: "https://picsum.photos/300/200/?blur", title: "Project", about: "Cool Project omg", links: { github: "", site: "" } },
-  { image: "https://picsum.photos/300/200/?blur", title: "Project", about: "Cool Project omg", links: { github: "", site: "" } },
+  { image: proj1, title: "Contact Book", about: "This is a simple yet functional contact book application built with React and Vite. The app allows users to add, view, edit, and delete contacts, making it a practical tool for managing personal or professional contacts.", links: { github: "https://github.com/anat3r/small-contact-list", site: "https://anat3r.github.io/small-contact-list"}},
+  { image: proj2, title: "Web Chat App", about: "This is a simple web chat application built using Google Firebase for hosting, storage, and authentication. Users can sign in with Google Auth and start chatting instantly. Please note that all messages are visible to anyone who logs in, making this a public chat platform.", links: { github: "https://github.com/anat3r/superchat", site: "https://thatawesomechat.firebaseapp.com" } },
+  { image: proj3, title: "React Tic Tac Toe Game", about: "This is a classic Tic Tac Toe game built with React. The game features a simple and intuitive interface, allowing two players to take turns and compete to get three in a row. It's a great example of managing state and rendering components dynamically in a React application.", links: { github: "https://github.com/anat3r/Tic-Tac-Toe", site: "https://anat3r.github.io/Tic-Tac-Toe/" } },
 ]
 
 
